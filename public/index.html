@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur de Bénéfice Crypto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculateur de Bénéfice Crypto</h1>
+        <form id="calcForm">
+            <input type="text" id="symbol" placeholder="Cryptomonnaie (ex: BTCUSDT)" required>
+            <input type="number" id="dailyInvestment" placeholder="Montant journalier (en USDT)" required>
+            <input type="date" id="startDate" required>
+            <input type="date" id="endDate" required>
+            <button type="submit">Calculer</button>
+        </form>
+        <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+	<script type="module" src="/firebase.js"></script>
+</body>
+</html>
